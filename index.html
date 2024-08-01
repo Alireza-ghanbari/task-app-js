@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/output.css">
-    <title>Document</title>
-</head>
-<body >
-    <h2 class="text-3xl underline">hello world</h2>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="icon" href="./src/assets/icon.png" type="image/x-icon" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="container min-h-screen mx-auto">
+      <div
+        class="w-full bg-white max-w-[540px] rounded-md mx-auto mt-[100px] pb-10 px-8"
+      >
+        <h2
+          class="text-[#002756] font-bold text-2xl flex items-center gap-2 py-8 mb-5"
+        >
+          To-Do List
+          <img src="src/assets/icon.png" class="w-8 h-8 object-cover" alt="" />
+        </h2>
+        <div
+          class="flex items-center justify-between bg-[#edeef0] rounded-full mb-6 pl-5 mx-auto"
+        >
+          <input
+            id="inp"
+            type="text"
+            placeholder="Add your task here"
+            class="border-none outline-none bg-transparent py-3"
+          />
+          <button
+            id="btn"
+            class="bg-[#ff5945] hover:opacity-95 duration-200 cursor-pointer rounded-full px-7 py-3 text-white text-lg"
+          >
+            Add
+          </button>
+        </div>
+
+        <ul id="list-container" class="text-[17px] select-none px-4 space-y-3">
+          
+        </ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
